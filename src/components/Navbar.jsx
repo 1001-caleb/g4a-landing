@@ -1,8 +1,14 @@
 import React from 'react'
-
+import styled from "styled-components"
 
 export default function Navbar() {
+  const Button = styled.a`
+    color: red;
+  `
+
   return (
-    <div className='bg-black'>Navbar</div>
+    <>
+      <Button>aloha</Button>
+   </>
   )
 }
