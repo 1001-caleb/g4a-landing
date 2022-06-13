@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <>
       <NabarContainer>
-        <h2>G4A</h2>
+        <figure><img src="../assets/logo-g4a.png" alt="" /></figure>
         <div className="links">
           <a href="">Conocenos</a>
           <a href="">Aprende</a>
@@ -21,7 +21,7 @@ const NabarContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 2rem 4rem;
-
+  
   h2 {
     font-size: 3rem;
     color: #0A033C;
