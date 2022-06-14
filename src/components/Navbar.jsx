@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import BurguerButton from "./BurguerButton";
 
 export default function Navbar() {
   return (
@@ -11,6 +12,10 @@ export default function Navbar() {
           <a href="">Aprende</a>
           <a href="">Comunidad</a>
         </div>
+        <div className="burguer">
+          <BurguerButton/>
+        </div>
+        
       </NabarContainer>
     </>
   );
@@ -37,5 +42,19 @@ const NabarContainer = styled.nav`
         color: #0A033C;
       }
   }
+  .burguer{
+    @media(min-width:768px){
+      display: none;
+    }
+  }
 
+  .links{
+    position: absolute;
+    top: -700px;
+    left: -2000px;
+    margin: 0 auto;
+    @media(min-width:768px){
+
+    }
+  }
 `;
