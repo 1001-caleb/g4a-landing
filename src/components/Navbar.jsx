@@ -1,19 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import BurguerButton from "./BurguerButton";
+import { useState } from "react";
 
 export default function Navbar() {
+
+  const [clicked, setClicked] = useState(false)
+
+  const handleClick = () =>{
+    setClicked(!clicked)
+  }
   return (
     <>
       <NabarContainer>
         <figure><img src="../assets/logo-g4a.png" alt="" /></figure>
-        <div className="links">
+        <div className={`links ${clicked ? 'active' : ''}`}>
           <a href="">Conocenos</a>
           <a href="">Aprende</a>
           <a href="">Comunidad</a>
         </div>
         <div className="burguer">
-          <BurguerButton/>
+          <BurguerButton clicked={clicked} handleClick={handleClick}/>
         </div>
         
       </NabarContainer>
@@ -53,8 +60,27 @@ const NabarContainer = styled.nav`
     top: -700px;
     left: -2000px;
     margin: 0 auto;
+    text-align: center;
     @media(min-width:768px){
-
+      a{
+        margin-left: 4rem;
+        color: #0A033C;
+      }
+      position: initial;
+      margin: 0;
+      display: inline;
     }
+  }
+
+  .links.active{
+   
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    margin: 0 auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 `;
