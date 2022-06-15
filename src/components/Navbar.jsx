@@ -47,6 +47,9 @@ const NabarContainer = styled.nav`
         text-decoration: none;
         font-size: 2rem;
         color: #0A033C;
+        &:hover{
+          color: #D8D8D8;
+        }
       }
   }
   .burguer{
@@ -65,6 +68,9 @@ const NabarContainer = styled.nav`
       a{
         margin-left: 4rem;
         color: #0A033C;
+        &:hover{
+          color: #FF6652;
+        }
       }
       position: initial;
       margin: 0;
@@ -86,7 +92,7 @@ const NabarContainer = styled.nav`
 `;
 
 const BgDiv = styled.div`
-  background-color: #222;
+  background-color: #FF6652;
   position: absolute;
   top: -1000px;
   left: -1000px;
