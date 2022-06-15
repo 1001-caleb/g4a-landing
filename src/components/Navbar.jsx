@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BurguerButton from "./BurguerButton";
 import { useState } from "react";
-
+import logo from '/assets/logo-g4a.png'
 export default function Navbar() {
 
   const [clicked, setClicked] = useState(false)
@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <NabarContainer>
-        <figure><img className='logo' src="../assets/logo-g4a.png" alt="" /></figure>
+        <figure><img className='logo' src={logo} alt="" /></figure>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a href="">Conocenos</a>
           <a href="">Aprende</a>
