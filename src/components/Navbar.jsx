@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <NabarContainer>
-        <figure><img src="../assets/logo-g4a.png" alt="" /></figure>
+        <figure><img className='logo' src="../assets/logo-g4a.png" alt="" /></figure>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a href="">Conocenos</a>
           <a href="">Aprende</a>
@@ -34,6 +34,13 @@ const NabarContainer = styled.nav`
   justify-content: space-between;
   padding: 2rem 4rem;
   
+  .logo{
+    width: 100px;
+    @media(min-width:768px){
+      width: 143px;
+    }
+  }
+
   h2 {
     font-size: 3rem;
     color: #0A033C;
@@ -94,7 +101,7 @@ const NabarContainer = styled.nav`
 const BgDiv = styled.div`
   background-color: #FF6652;
   position: absolute;
-  top: -1000px;
+  top: -1500px;
   left: -1000px;
   width: 100%;
   height: 100%;

@@ -19,8 +19,8 @@ export default BurguerButton
 
 const Burguer = styled.div`
 .nav-icon-5{
-  width: 35px;
-  height: 30px;
+  width: 25px;
+  height: 20px;
   margin: 10px 10px;
   position: relative;
   cursor: pointer;
@@ -40,7 +40,7 @@ const Burguer = styled.div`
   left: 0px;
 }
 .nav-icon-5 span:nth-child(2){
-  top:13px;
+  top:7px;
   left: 0px;
   opacity:1;
 }
@@ -59,13 +59,13 @@ const Burguer = styled.div`
 }
 .nav-icon-5.open span:nth-child(1){
   transform: rotate(45deg);
-  top: 13px;
+  top: 10px;
 }
 .nav-icon-5.open span:nth-child(2){
   opacity:0;
 }
 .nav-icon-5.open span:nth-child(3){
   transform: rotate(-45deg);
-  top: 13px;
+  top: 10px;
 }
 `
