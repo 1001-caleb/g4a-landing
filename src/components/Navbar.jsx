@@ -74,8 +74,13 @@ const NabarContainer = styled.nav`
     left: -2000px;
     margin: 0 auto;
     text-align: center;
+    transition: all .6s;
+    a{
+      font-size: 3rem;
+    }
     @media(min-width:768px){
       a{
+        font-size: 2rem;
         margin-left: 4rem;
         color: #0A033C;
         &:hover{
