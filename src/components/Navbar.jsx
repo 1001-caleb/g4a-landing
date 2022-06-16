@@ -33,7 +33,12 @@ const NabarContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
+
+  @media(min-width:768px){
+    padding: 2rem 4rem;
+
+    }
   
   .logo{
     width: 100px;
@@ -75,9 +80,11 @@ const NabarContainer = styled.nav`
     margin: 0 auto;
     text-align: center;
     transition: all .6s;
+
     a{
       font-size: 2.5rem;
     }
+
     @media(min-width:768px){
       a{
         font-size: 2rem;

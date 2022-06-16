@@ -13,6 +13,9 @@ export default function Hero() {
                 para <span>aprender </span>
                 en un solo lugar
             </h3>
+            <Parrafo>
+            Iniciativa G4A (Guides for all), donde les brindamos rutas de aprendizajes efectivas y recursos para aprender lo que quieran e iniciarte en este mundo de las TI.
+            </Parrafo>
         </Section>
     </>
   )
@@ -25,7 +28,7 @@ const Section = styled.section`
     gap: 3rem;
     text-align: center;
     align-items: center;
-    
+
     h3{
         font-size: 2.5rem;
         color: #0A033C;
@@ -58,4 +61,14 @@ const Tag = styled.h4`
     font-size: 1.6rem;
     width: 190px;
     height: 36px;
+    border-radius: 5px;
+`
+const Parrafo = styled.p`
+    font-size: 1.6rem;
+    color: #5D5A6F;
+
+    @media (min-width: 768px){
+        font-size: 2rem;
+    }
+
 `
