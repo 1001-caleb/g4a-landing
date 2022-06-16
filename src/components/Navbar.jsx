@@ -3,11 +3,12 @@ import styled from "styled-components";
 import BurguerButton from "./BurguerButton";
 import { useState } from "react";
 import logo from '/assets/logo-g4a.png'
+
 export default function Navbar() {
 
   const [clicked, setClicked] = useState(false)
 
-  const handleClick = () =>{
+  const handleClick = () => {
     setClicked(!clicked)
   }
   return (
@@ -20,7 +21,7 @@ export default function Navbar() {
           <a href="">Comunidad</a>
         </div>
         <div className="burguer">
-          <BurguerButton clicked={clicked} handleClick={handleClick}/>
+          <BurguerButton clicked={clicked} handleClick={handleClick} />
         </div>
         <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
       </NabarContainer>
@@ -49,6 +50,7 @@ const NabarContainer = styled.nav`
   .links {
     display: flex;
     gap: 4rem;
+    z-index: 100;
 
      a {
         text-decoration: none;
@@ -60,6 +62,7 @@ const NabarContainer = styled.nav`
       }
   }
   .burguer{
+    z-index: 100;
     @media(min-width:768px){
       display: none;
     }
@@ -105,7 +108,7 @@ const BgDiv = styled.div`
   left: -1000px;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 10;
   transition: all .6s ease ;
   
   &.active{
