@@ -21,12 +21,21 @@ const Section = styled.section`
     padding: 2rem 4rem;
 
     h3{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         color: #0A033C;
+        @media(min-width: 768px){
+            font-size: 3.5rem;
+            
+        }
 
         span{
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             color: #FF6652;
+            
+            @media(min-width: 768px){
+            font-size: 3.5rem;
+            
+        }
         }
     }
 `
