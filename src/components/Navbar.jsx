@@ -76,7 +76,7 @@ const NabarContainer = styled.nav`
     text-align: center;
     transition: all .6s;
     a{
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     @media(min-width:768px){
       a{
