@@ -7,7 +7,7 @@ export default function CardsContainer() {
     const [cards, setCards] = useState([
         {
             id: 1,
-            icon: '././assets/discord.png',
+            icon: '/assets/discord.png',
             title: 'Discord',
             description: 'En nuestra comunidad de discord podrás encontrar cursos gratis, guias, proyectos y una comunidad dispuesta a crecer contigo.',
             link: ''
