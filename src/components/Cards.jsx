@@ -1,17 +1,18 @@
 import React from 'react'
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 export default function Cards(props) {
-  return (
-        <>
-            <Card> 
-              <img src={props.icon} alt="" />  
-              <h4>{props.title}</h4>
-              <p>{props.description}</p>
-              <a href={props.link}>Ir al sitio</a>
-            </Card>
-        </>
-  )
+    return (
+
+        <Card>
+            <img src={props.icon} alt="" />
+            <h4>{props.title}</h4>
+            <p>{props.description}</p>
+            <a href={props.link}>Ir al sitio</a>
+        </Card>
+
+    )
 }
 
 const Card = styled.div`
@@ -25,7 +26,9 @@ const Card = styled.div`
     text-align: center;
     border-radius: 15px;
     justify-content: center;
-    
+    -webkit-box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.14); 
+    box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.14);
+
     img{
         width: 50px;
         height: 50px;
@@ -58,5 +61,10 @@ const Card = styled.div`
         margin: 0 auto;
         width: 162px;
         height: 44px;
+
+        &:hover{
+            background-color: #9C4DF4;
+            color: #fff;
+        }
     }
 `

@@ -67,7 +67,7 @@ export default function CardsContainer() {
         <>
             <Contenedor>
                 {cards.map(card =>{
-                    return <Cards 
+                    return <Cards animate={{}}
                         key={card.id}
                         icon={card.icon}
                         title={card.title}
@@ -75,6 +75,7 @@ export default function CardsContainer() {
                         link={card.link}
                         >
                     </Cards>
+                    
                 })}
             </Contenedor>
         </>

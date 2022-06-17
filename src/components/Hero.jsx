@@ -32,7 +32,7 @@ const Section = styled.section`
     h3{
         font-size: 2.5rem;
         color: #0A033C;
-       
+        line-height: 40px;
 
         @media(min-width: 768px){
             font-size: 3.5rem;
@@ -66,6 +66,7 @@ const Tag = styled.h4`
 const Parrafo = styled.p`
     font-size: 1.6rem;
     color: #5D5A6F;
+    line-height: 30px;
 
     @media (min-width: 768px){
         font-size: 2rem;
