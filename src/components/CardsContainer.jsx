@@ -18,7 +18,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/50x9MZ7.png',
             title: 'Guias',
             description: 'Todos las rutas de aprendizaje y recursos que te ofrecemos para fortalecer tus habilidades.',
-            link:''
+            link: ''
         },
 
         {
@@ -26,7 +26,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/CLGZUX6.png',
             title: 'Youtube',
             description: 'Nuestros cursos, tutoriales y contenido relacionado a la programación y tecnologia en general.',
-            link:''
+            link: ''
         },
 
         {
@@ -34,7 +34,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/EIMjwxp.png',
             title: 'Tiktok',
             description: 'Contenido resumido y recopilación de recursos en general.',
-            link:''
+            link: ''
         },
 
         {
@@ -42,7 +42,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/YdR7HNA.png',
             title: 'Twitter',
             description: 'Hilos con recursos e información relevante en programación y tecnologia.',
-            link:''
+            link: ''
         },
 
         {
@@ -50,7 +50,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/ngSDt78.png',
             title: 'Instagram',
             description: 'Recopilación de cheatsheets de distintas tecnologias y lenguajes e historias avisando sobre contenido y mas.',
-            link:''
+            link: ''
         },
 
         {
@@ -63,23 +63,23 @@ export default function CardsContainer() {
 
     ]);
 
-  return (
+    return (
         <>
             <Contenedor>
-                {cards.map(card =>{
+                {cards.map(card => {
                     return <Cards animate={{}}
                         key={card.id}
                         icon={card.icon}
                         title={card.title}
                         description={card.description}
                         link={card.link}
-                        >
+                    >
                     </Cards>
-                    
+
                 })}
             </Contenedor>
         </>
-  )
+    )
 }
 
 const Contenedor = styled.section`

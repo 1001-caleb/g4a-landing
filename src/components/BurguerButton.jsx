@@ -4,13 +4,13 @@ import styled from "styled-components"
 function BurguerButton(props) {
   return (
     <Burguer>
-        <div onClick={props.handleClick} 
-            className={`icon nav-icon-5 ${props.clicked ? 'open': ''}`}
-        >
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div onClick={props.handleClick}
+        className={`icon nav-icon-5 ${props.clicked ? 'open' : ''}`}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </Burguer>
   )
 }
@@ -40,7 +40,7 @@ const Burguer = styled.div`
   left: 0px;
 }
 .nav-icon-5 span:nth-child(2){
-  top:7px;
+  top:8px;
   left: 0px;
   opacity:1;
 }
