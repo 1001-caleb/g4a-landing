@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import { Contenedor } from './styleds/CardContainer.styled';
 import Cards from './Cards';
 
 export default function CardsContainer() {
 
-    const [cards, setCards] = useState([
+    const cards = [
         {
             id: 1,
             icon: 'https://i.imgur.com/WL9LIEc.png',
@@ -61,7 +60,7 @@ export default function CardsContainer() {
             link: ''
         },
 
-    ]);
+    ];
 
     return (
         <>
@@ -81,15 +80,3 @@ export default function CardsContainer() {
         </>
     )
 }
-
-const Contenedor = styled.section`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-    padding: 1rem 2rem;
-
-    @media(min-width:768px){
-        padding: 2rem 4rem;
-    }
-`
-
