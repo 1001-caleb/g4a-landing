@@ -22,10 +22,15 @@ export default function app() {
             <Hero />
             <CardsContainer />
         </StyledApp>
+
     </ThemeProvider>
   )
 }
 
 const StyledApp = styled.div`
-  color: ${(props) => props.theme.fontColor};
+    html{
+        color: ${(props) => props.theme.color};
+        background-color: ${(props) => props.theme.body};
+    }
+
 `;
