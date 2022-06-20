@@ -1,13 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Navbar from "../src/components/Navbar"
-import Hero from '../src/components/Hero'
-import CardsContainer from '../src/components/CardsContainer'
+import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar />
-    <Hero />
-    <CardsContainer />
+    <App></App>
   </React.StrictMode>
 )

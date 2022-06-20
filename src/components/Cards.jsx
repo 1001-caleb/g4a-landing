@@ -26,8 +26,8 @@ const Card = styled.div`
     text-align: center;
     border-radius: 15px;
     justify-content: center;
-    -webkit-box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.14); 
-    box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.14);
+    /* -webkit-box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.14); 
+    box-shadow: 0px 7px 13px 0px rgba(0,0,0,0.14); */
 
     img{
         width: 50px;
