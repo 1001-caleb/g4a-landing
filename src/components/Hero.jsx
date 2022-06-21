@@ -13,7 +13,7 @@ export default function Hero() {
                     en un solo lugar
                 </h3>
                 <Parrafo>
-                    Iniciativa G4A (Guides for all), donde les brindamos rutas de aprendizajes efectivas y recursos para aprender lo que quieran e iniciarte en este mundo de las TI.
+                    Iniciativa G4A (Guides for all), donde buscamos centralizar contenido de calidad para aprender programación en un solo lugar. 
                 </Parrafo>
             </Section>
         </>
