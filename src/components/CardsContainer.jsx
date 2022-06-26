@@ -17,7 +17,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/50x9MZ7.png',
             title: 'Guias',
             description: 'Todos las rutas de aprendizaje y recursos que te ofrecemos para fortalecer tus habilidades.',
-            link: ''
+            link: 'https://github.com/guides4all'
         },
 
         {
@@ -25,7 +25,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/CLGZUX6.png',
             title: 'Youtube',
             description: 'Nuestros cursos, tutoriales y contenido relacionado a la programación y tecnologia en general.',
-            link: ''
+            link: 'https://www.youtube.com/channel/UCgIzjIEuTsQMl6kb9BOD6mw'
         },
 
         {
@@ -33,7 +33,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/EIMjwxp.png',
             title: 'Tiktok',
             description: 'Contenido resumido y recopilación de recursos en general.',
-            link: ''
+            link: 'https://www.tiktok.com/@guides4all'
         },
 
         {
@@ -41,7 +41,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/YdR7HNA.png',
             title: 'Twitter',
             description: 'Hilos con recursos e información relevante en programación y tecnologia.',
-            link: ''
+            link: 'https://twitter.com/Guides4A'
         },
 
         {
@@ -49,7 +49,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/ngSDt78.png',
             title: 'Instagram',
             description: 'Recopilación de cheatsheets de distintas tecnologias y lenguajes e historias avisando sobre contenido y mas.',
-            link: ''
+            link: 'https://www.instagram.com/guides4all/?hl=es-la'
         },
 
         {
@@ -65,7 +65,7 @@ export default function CardsContainer() {
             icon: 'https://i.imgur.com/a1fziFg.png',
             title: 'Twitch',
             description: 'Directos programando, resolviendo retos y hablando con la comunidad.',
-            link: ''
+            link: 'https://www.twitch.tv/guides4all'
         },
 
     ];
