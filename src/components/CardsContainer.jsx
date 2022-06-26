@@ -60,6 +60,14 @@ export default function CardsContainer() {
             link: ''
         },
 
+        {
+            id: 7,
+            icon: 'https://i.imgur.com/a1fziFg.png',
+            title: 'Twitch',
+            description: 'Directos programando, resolviendo retos y hablando con la comunidad.',
+            link: ''
+        },
+
     ];
 
     return (
